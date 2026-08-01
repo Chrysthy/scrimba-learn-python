@@ -21,6 +21,7 @@ morning = "1. Take a morning walk "
 afternoon = "2. Play video games"
 evening = "3. Read a book"
 
+#plan_for_today = "My plan for today is:" + morning + afternoon + evening
 plan_for_today = f"My plan for today is: {morning} {afternoon} {evening}"
 
 print(plan_for_today)
