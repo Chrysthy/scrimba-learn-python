@@ -5,6 +5,6 @@
 
 ## Projects
 
-### [PayUp — Expense Splitter](./projects/01_expense_splitter/README.md)
+### [PayUp Expense Splitter](./projects/01_payup_app/README.md)
 
 A Python command-line application that calculates how a bill should be split between multiple people.
