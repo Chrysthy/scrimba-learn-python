@@ -2,6 +2,10 @@
 
 <p align="center">Discover Python, one of the most in-demand programming languages, from the ground up, building three real projects along the way: an expense-splitting app, a word-scramble game, and a karaoke queue manager.</p>
 
+<p align="center">
+  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=c920c9&labelColor=000000">
+</p>
+
 
 ## Projects
 
