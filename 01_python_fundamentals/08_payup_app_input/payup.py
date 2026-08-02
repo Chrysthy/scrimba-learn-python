@@ -1,0 +1,32 @@
+# Challenge: Gather Input from Users
+
+# We need four things from the user:
+
+# - The name of the event or occasion
+# - The cost
+# - The tip or service charge
+# - How many people are splitting the bill
+
+# 1. Replace the hardcoded values for event, cost, service_charge, and group_size with input() prompts.
+# 2. Keep grand_total and total_per_person hardcoded for now. They won't be entered by the user.
+# 3. Run the program and make sure your prompts are clear and the display looks right.
+
+event = input("What is the name of the event or occasion? ")
+cost = input(
+    "What is the cost of the event? Enter a whole number (e.g. 300 for $300): ")
+service_charge = input(
+    "Was there a tip or a service charge? Enter a whole number (e.g. 20 for 20%): ")
+group_size = input("How many people are splitting the bill? ")
+grand_total = 330
+total_per_person = 110
+
+print("Welcome to PayUp!")
+print()
+print(f"Here's the breakdown for {event}:")
+print()
+print(f"Cost: ${cost}")
+print(f"Service charges: ${service_charge}")
+print(f"Group size: {group_size}")
+print(f"Grand total: ${grand_total}")
+print()
+print(f"Each person must PayUp: ${total_per_person}")
