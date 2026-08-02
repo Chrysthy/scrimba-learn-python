@@ -34,10 +34,12 @@ deleted_songs = 47
 new_total_songs = my_songs - deleted_songs
 print(new_total_songs)
 
-movie_ticket_price = 12
-bought_tickets = movie_ticket_price * 3
-print(bought_tickets)
+movie_ticket_cost = 12
+num_of_tickets = 3
+total_tickets = movie_ticket_cost * num_of_tickets
+print(total_tickets)
 
-my_stickers = 48
-stickers_per_friend = my_stickers / 6
+stickers = 48
+friends = 6
+stickers_per_friend = stickers / friends
 print(stickers_per_friend)
