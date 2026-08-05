@@ -25,3 +25,14 @@ print(mood)
 #   Mac: Control+Command+Space
 #   Windows: Windows+Period
 # 4. Print all three lists.
+
+
+skills = ["JavaScript", "Pyhton", "SQL"]
+years = [3, 1, 0]
+about_me = ["💜", "🍔", "🎮"]
+
+print(skills, years, about_me)
+
+# print(skills)
+# print(years)
+# print(about_me)
