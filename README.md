@@ -37,3 +37,12 @@ A Python command-line application that calculates how a bill should be split bet
 ### [Guess the Word Game](./projects/02_guess_the_word/README.md)
 
 A Python command-line word game where players unscramble letters and try to guess the correct word.
+
+
+<br>
+
+## 📜 License
+
+* This project is licensed under the [MIT License](https://choosealicense.com/licenses/mit/)
+
+<br>
