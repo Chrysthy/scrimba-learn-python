@@ -25,3 +25,8 @@
 ### [PayUp Expense Splitter](./projects/01_payup_app/README.md)
 
 A Python command-line application that calculates how a bill should be split between multiple people.
+
+
+### [Guess the Word Game](./projects/02_guess_the_word/README.md)
+
+A Python command-line word game where players unscramble letters and try to guess the correct word.
