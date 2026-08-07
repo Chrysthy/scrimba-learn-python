@@ -30,7 +30,15 @@ print(query)
 # 3. email         "  Jamie@Example.COM"  ->  "jamie@example.com"
 # 4. display_name  "  the ROCK  "         ->  "The Rock"
 
+promo_code = "spring25"
+full_name = "jamie rivera"
+email = "  Jamie@Example.COM"
+display_name = "  the ROCK  "
 
+print(promo_code.upper())
+print(full_name.title())
+print(email.strip().lower())
+print(display_name.strip().title())
 
 
 
