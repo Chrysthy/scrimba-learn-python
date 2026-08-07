@@ -19,6 +19,12 @@
 
 <br>
 
+## 🛠 Technologies
+
+* Python
+* Git e GitHub
+
+<br>
 
 ## 💻 Projects
 
@@ -26,6 +32,7 @@
 
 A Python command-line application that calculates how a bill should be split between multiple people.
 
+<br>
 
 ### [Guess the Word Game](./projects/02_guess_the_word/README.md)
 
