@@ -37,7 +37,8 @@ if guess == "hint":
 
 
 if guess == "skip":
-  print(f"Skipped! The word was '{word}'.")
+    print(f"Skipped! The word was '{word}'.")
 elif guess == word:
-  print("✅  Correct!")
+    print("✅  Correct!")
 else:
+    print(f"❌ Sorry, the word was '{word}'.")
