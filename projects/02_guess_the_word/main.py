@@ -18,27 +18,43 @@ print("Welcome to Guess the Word!")
 print()
 print("Unscramble the letters and discover the hidden tech word.")
 
-word, hint = random.choice(word_bank)
+ROUNDS = 5
+round_num = 1
 
-letters = list(word)
-random.shuffle(letters)
-scrambled_word = "".join(letters).upper()
+while ROUNDS <= 5:
 
-print(f"Scrambled: {scrambled_word}")
+    word, hint = random.choice(word_bank)
 
-guess = input("Guess the word (or type 'hint' / 'skip'): ").strip().lower()
+    letters = list(word)
+    random.shuffle(letters)
+    scrambled_word = "".join(letters).upper()
 
 
-if guess == "hint":
     print()
-    print(f"Hint: {hint}")
+    print(f"Round {round_num} of {ROUNDS}")
     print()
-    guess = input("Your guess (or 'skip'): ").strip().lower()
+    print(f"Scrambled: {scrambled_word}")
+    print()
+
+    guess = input("Guess the word (or type 'hint' / 'skip' / 'quit'): ").strip().lower()
+
+   
+    if guess == "hint":
+        print()
+        print(f"Hint: {hint}")
+        print()
+        guess = input("Your guess (or 'skip' / 'quit'): ").strip().lower()
 
 
-if guess == "skip":
-    print(f"Skipped! The word was '{word}'.")
-elif guess == word:
-    print("✅  Correct!")
-else:
-    print(f"❌ Sorry, the word was '{word}'.")
+    if guess == "quit":
+        print("Thanks for playing! See you later!")
+        break
+
+    elif guess == "skip":
+        print(f"Skipped! The word was '{word}'.")
+    elif guess == word:
+        print("✅  Correct!")
+    else:
+        print(f"❌ Sorry, the word was '{word}'.")
+
+    round_num += 1
