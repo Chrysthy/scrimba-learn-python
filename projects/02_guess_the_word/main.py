@@ -18,22 +18,26 @@ print("Welcome to Guess the Word!")
 print()
 print("Unscramble the letters and discover the hidden tech word.")
 
-words = ["burger", "video game", "cat"]
-
-word = random.choice(word_bank)
+word, hint = random.choice(word_bank)
 
 letters = list(word)
 random.shuffle(letters)
-scrambled_word = "".join(letters)
+scrambled_word = "".join(letters).upper()
 
 print(f"Scrambled: {scrambled_word}")
 
-guess = input(
-    f"type a guess or type 'skip' to skip the word: ").lower().strip()
+guess = input("Guess the word (or type 'hint' / 'skip'): ").strip().lower()
+
+
+if guess == "hint":
+    print()
+    print(f"Hint: {hint}")
+    print()
+    guess = input("Your guess (or 'skip'): ").strip().lower()
+
 
 if guess == "skip":
-    print(f"Skipped! The word was {word}.")
+  print(f"Skipped! The word was '{word}'.")
 elif guess == word:
-    print("✅ Correct!")
+  print("✅  Correct!")
 else:
-    print(f"❌ Sorry, the word was {word}.")
