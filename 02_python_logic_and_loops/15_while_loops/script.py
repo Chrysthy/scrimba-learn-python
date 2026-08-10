@@ -23,3 +23,16 @@ lap = 1
 while lap <= TOTAL_LAPS:
     print(f"Lap: {lap}")
     lap += 1
+
+
+
+# Challenge: Boarding Passes
+# You're building an airport app that prints a boarding pass for each
+# passenger on a group booking.
+# Write a while loop that prints one line per passenger, like this:
+# "Printing boarding pass 1 of 5..."
+# "Printing boarding pass 2 of 5..."
+# ...and so on until the last passenger.
+
+PASSENGERS = 5
+passenger_num = 1
