@@ -21,3 +21,43 @@ word_bank = [
     ("prototype", "It's just an early ____, so please ignore that clicking anywhere crashes it."),
 ]
 
+ROUNDS = 5
+round_num = 1
+
+while ROUNDS <= 5:
+
+    word, hint = random.choice(word_bank)
+
+    letters = list(word)
+    random.shuffle(letters)
+    scrambled_word = "".join(letters).upper()
+
+
+    print()
+    print(f"Round {round_num} of {ROUNDS}")
+    print()
+    print(f"Scrambled: {scrambled_word}")
+    print()
+
+    guess = input("Guess the word (or type 'hint' / 'skip' / 'quit'): ").strip().lower()
+
+   
+    if guess == "hint":
+        print()
+        print(f"Hint: {hint}")
+        print()
+        guess = input("Your guess (or 'skip' / 'quit'): ").strip().lower()
+
+
+    if guess == "quit":
+        print("Thanks for playing! See you later!")
+        break
+
+    elif guess == "skip":
+        print(f"Skipped! The word was '{word}'.")
+    elif guess == word:
+        print("✅  Correct!")
+    else:
+        print(f"❌ Sorry, the word was '{word}'.")
+
+    round_num += 1
