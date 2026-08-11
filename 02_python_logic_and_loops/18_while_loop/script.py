@@ -33,3 +33,13 @@ print(already_called)
 
 entrants = ["Amara", "Diego", "Priya", "Leo", "Sofia", "Kwame"]
 winners = ["Diego", "Sofia"]
+
+name = random.choice(entrants)
+
+while name in winners:
+  name = random.choice(entrants)
+
+winners.append(name)
+
+print(f"Winner: {name}")
+print(f"Winner List: {winners}")
