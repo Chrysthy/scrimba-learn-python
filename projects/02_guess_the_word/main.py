@@ -21,6 +21,8 @@ print("Unscramble the letters and discover the hidden tech word.")
 ROUNDS = 5
 round_num = 1
 
+used = []
+
 while ROUNDS <= 5:
 
     word, hint = random.choice(word_bank)
