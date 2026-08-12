@@ -25,6 +25,11 @@ while ROUNDS <= 5:
 
     word, hint = random.choice(word_bank)
 
+    while (word, hint) in used:
+        word, hint = random.choice(word_bank)
+
+    used.append((word, hint))
+
     letters = list(word)
     random.shuffle(letters)
     scrambled_word = "".join(letters).upper()
