@@ -23,9 +23,17 @@ word_bank = [
 ROUNDS = 5
 round_num = 1
 
+used = []
+
 while round_num <= ROUNDS:
   
   word, hint = random.choice(word_bank)
+
+  while (word, hint) in used:
+    word, hint = random.choice(word_bank)
+
+  used.append((word, hint))
+
 
   letters = list(word)
   random.shuffle(letters)
