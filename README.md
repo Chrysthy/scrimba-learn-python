@@ -45,4 +45,10 @@ A Python command-line word game where players unscramble letters and try to gues
 
 * This project is licensed under the [MIT License](https://choosealicense.com/licenses/mit/)
 
+
+<br>
+
+## 🫱🏻‍🫲🏻 Contributing
+<p> Contributions, issues, and feature requests are welcome! Please, feel free to do it! 😉 </p>
+
 <br>
