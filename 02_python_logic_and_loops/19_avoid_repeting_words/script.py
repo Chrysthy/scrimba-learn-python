@@ -29,7 +29,7 @@ while round_num <= ROUNDS:
   
   word, hint = random.choice(word_bank)
 
-  while (word, hint) in used:
+  while (word, hint) in used: # isso só funciona se o word_bank for maior do que o número de rodadas, caso contrário, ele ficará pegando as palavras usadas e entrará em loop infinito
     word, hint = random.choice(word_bank)
 
   used.append((word, hint))
