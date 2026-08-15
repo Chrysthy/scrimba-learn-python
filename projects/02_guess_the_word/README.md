@@ -69,3 +69,23 @@ Final score: 4/5
 - Counters
 - Score tracking
 - F-strings
+
+## How to Run
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/Chrysthy/scrimba-learn-python.git
+```
+
+2. Open the project directory:
+
+```bash
+cd scrimba-learn-python/projects/02_word_scramble_game
+```
+
+3. Run the Python file:
+
+```bash
+python main.py
+```
