@@ -26,3 +26,31 @@ The player can also type:
 - `quit` to leave the game
 
 At the end, the game displays the final score along with a message based on the player's result.
+
+## Example
+
+```text
+Welcome to ByteShuffle!
+
+Unscramble the letters and discover the hidden tech word.
+
+Round 1 of 5
+
+Scrambled: XATNSY
+
+Guess the word (or type 'hint' / 'skip' / 'quit'): hint
+
+Hint: One missing bracket, and Python hits me with a ____ error.
+
+Your guess (or 'skip' / 'quit'): syntax
+
+✅ Correct!
+```
+
+After five rounds:
+
+```text
+Final score: 4/5
+
+🎉 Near perfect, only one failing test!
+```
