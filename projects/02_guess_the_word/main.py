@@ -22,6 +22,7 @@ ROUNDS = 5
 round_num = 1
 
 used = []
+score = 0
 
 while ROUNDS <= 5:
 
@@ -61,7 +62,21 @@ while ROUNDS <= 5:
         print(f"Skipped! The word was '{word}'.")
     elif guess == word:
         print("✅  Correct!")
+        score += 1
     else:
         print(f"❌ Sorry, the word was '{word}'.")
 
     round_num += 1
+
+print()
+print(f"Final score: {score}/{ROUNDS}")
+print()
+
+if score == 5:
+    print("🏆 Flawless! All tests passing, zero bugs.")
+elif score == 4:
+    print("🎉 Near perfect, only one failing test!")
+elif score == 3:
+    print("💡 Good effort! The code runs, and that's what counts.")
+else:
+    print("😲 Have you tried turning it off and on again?")
