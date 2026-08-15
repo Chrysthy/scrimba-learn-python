@@ -24,7 +24,7 @@ round_num = 1
 used = []
 score = 0
 
-while ROUNDS <= 5:
+while round_num <= ROUNDS:
 
     word, hint = random.choice(word_bank)
 
@@ -37,22 +37,20 @@ while ROUNDS <= 5:
     random.shuffle(letters)
     scrambled_word = "".join(letters).upper()
 
-
     print()
     print(f"Round {round_num} of {ROUNDS}")
     print()
     print(f"Scrambled: {scrambled_word}")
     print()
 
-    guess = input("Guess the word (or type 'hint' / 'skip' / 'quit'): ").strip().lower()
+    guess = input(
+        "Guess the word (or type 'hint' / 'skip' / 'quit'): ").strip().lower()
 
-   
     if guess == "hint":
         print()
         print(f"Hint: {hint}")
         print()
         guess = input("Your guess (or 'skip' / 'quit'): ").strip().lower()
-
 
     if guess == "quit":
         print("Thanks for playing! See you later!")
