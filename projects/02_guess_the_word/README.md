@@ -108,3 +108,11 @@ This first version keeps the game intentionally simple. Some current limitations
 - Improve input validation
 - Display the correct number of completed rounds when the player quits
 - Add a high-score system
+
+## Course
+
+This project was developed as part of the **Learn Python** course by Scrimba.
+
+---
+
+[← Back to the main README](../../README.md)
