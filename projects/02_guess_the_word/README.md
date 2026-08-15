@@ -99,3 +99,12 @@ This first version keeps the game intentionally simple. Some current limitations
 - There is no option to play again after the game ends
 - The word bank is stored directly in the Python file
 - The final score is displayed out of five even if the player quits before completing all rounds
+
+## Possible Improvements
+
+- Add a play-again option
+- Add more words and categories
+- Award different points depending on whether a hint was used
+- Improve input validation
+- Display the correct number of completed rounds when the player quits
+- Add a high-score system
