@@ -89,3 +89,13 @@ cd scrimba-learn-python/projects/02_word_scramble_game
 ```bash
 python main.py
 ```
+
+## Current Limitations
+
+This first version keeps the game intentionally simple. Some current limitations are:
+
+- The game always contains five rounds
+- The player can request only one hint attempt per round
+- There is no option to play again after the game ends
+- The word bank is stored directly in the Python file
+- The final score is displayed out of five even if the player quits before completing all rounds
