@@ -54,3 +54,18 @@ Final score: 4/5
 
 🎉 Near perfect, only one failing test!
 ```
+
+## Concepts Practiced
+
+- Variables
+- Lists and tuples
+- While loops
+- Conditional statements
+- User input
+- String methods
+- Random selection
+- Shuffling lists
+- Membership checks
+- Counters
+- Score tracking
+- F-strings
