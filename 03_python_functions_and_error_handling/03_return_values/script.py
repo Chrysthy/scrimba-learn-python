@@ -51,3 +51,13 @@ print(f"The room is {area} square feet.")
 
 
 
+def add_tax(price):
+    return price * 1.08
+
+total = add_tax(50)
+
+print(f"With tax, that comes to ${total:.2f}.")
+
+
+
+
