@@ -1,3 +1,5 @@
+import random
+
 def greet_jenny():
   print("Welome, Jenny!")
 
@@ -51,3 +53,12 @@ def sum(num1, num2):
 
 print(sum(2, 3))
 print(sum(10, 45))
+
+
+
+def scramble (word):
+    letters = list(word)
+    random.shuffle(letters)
+    print("".join(letters))
+
+scramble("Chrystine")
