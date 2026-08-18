@@ -44,3 +44,10 @@ show_welcome()
 #    any word and prints a scrambled version of it.
 #    Example output:
 #    scramble("python") might print nohtyp
+
+
+def sum(num1, num2):
+    return num1 + num2
+
+print(sum(2, 3))
+print(sum(10, 45))
