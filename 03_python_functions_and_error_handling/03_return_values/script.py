@@ -40,3 +40,14 @@ print(pizzas)
 #    Use it to build a name, then print a greeting with it.
 #    Example output:
 #    Welcome, Mike Reed!
+
+
+def room_area(length, width):
+   return length * width
+
+area = room_area(12, 10)
+
+print(f"The room is {area} square feet.")
+
+
+
