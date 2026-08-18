@@ -60,4 +60,9 @@ print(f"With tax, that comes to ${total:.2f}.")
 
 
 
+def full_name(first, last):
+    return first + " " + last
 
+name = full_name("Mike", "Reed")
+
+print(f"Welcome, {name}!")
