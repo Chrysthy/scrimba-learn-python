@@ -1,6 +1,8 @@
-# - show a list of commands 
-# - show the queue 
-# - respond to commands: 
+queue = [("Annie", "Dancing Queen"), ("Allen", "Country Roads")]
+
+# - show a list of commands
+# - show the queue
+# - respond to commands:
 #   - add a singer
 #   - remove a singer
 #   - quit or exit the program (keep running until user quits)
@@ -10,7 +12,17 @@ def show_queue(queue):
     """Print everyone currently in the queue"""
     print("[the queue goes here]")
 
-queue = [("Annie", "Dancing Queen"), ("Allen", "Country Roads")]
+# Function stubs go here
+
+def add_singer(queue):
+    """Ask for the singer and add them to the queue"""
+    print("[add a singer]")
+
+
+def remove_singer(queue):
+    """Remove singer fron the queue"""
+    print("[remove a singer]")
+
 
 def run_app(queue):
     print("=" * 44)
@@ -21,11 +33,25 @@ def run_app(queue):
 
     while is_running:
 
+        show_queue(queue)
+        print()
         print("Options:  add / remove / quit")
 
         command = input("> ")
 
         if command == "quit":
             is_running = False
-            print("Good Night!")
+            print("Goodnight!")
 
+        # your commands go here
+        elif command == "add":
+            add_singer(queue)
+
+        elif command == "remove":
+            remove_singer(queue)
+
+        else:
+            print(f"Sorry, I don't know the command '{command}'")
+
+
+run_app(queue)
