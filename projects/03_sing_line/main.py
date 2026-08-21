@@ -16,14 +16,30 @@ def show_queue(queue):
   print("Options:  add / remove / quit")
 
 
+def prompt_for_singer():
+
+  name = input("Name: ").strip().title()
+  song = input("Song: ").strip().title()
+
+  return name, song
+
+
+
 def add_singer(queue):
-    """Ask for the singer and add them to the queue"""
-    print("[add a singer]")
+
+  name, song = prompt_for_singer()
+  print(name, song)
+
+  queue.append((name, song))
+  print()
+  print(f"Aded {name} to the queue")
+
 
 
 def remove_singer(queue):
     """Remove singer fron the queue"""
     print("[remove a singer]")
+
 
 
 def run_app(queue):
