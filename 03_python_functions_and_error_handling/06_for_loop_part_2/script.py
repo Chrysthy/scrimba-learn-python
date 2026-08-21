@@ -26,3 +26,15 @@ lineup = [
 #    Daft Punk (electronic) plays a long set: 90 minutes
 #    Adele (pop) plays 60 minutes
 #    Metallica (metal) plays a long set: 100 minutes
+
+
+for act in lineup:
+
+    band, genre, minutes = act
+
+    if minutes >= 90:
+        print(f"{band} ({genre}) plays a long set: {minutes} minutes.")
+    else:
+        print(f"{band} ({genre}) plays {minutes} minutes.")
+
+
