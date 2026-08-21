@@ -2,8 +2,18 @@ queue = [("Annie", "Dancing Queen"), ("Allen", "Country Roads")]
 
 
 def show_queue(queue):
-    """Print everyone currently in the queue"""
-    print("[the queue goes here]")
+  """Print everyone currently in the queue"""
+  print()
+  print("Current Queue:")
+  print()
+
+  for singer in queue:
+    name, song = singer
+
+    print(f"{name} - {song}")
+
+  print()
+  print("Options:  add / remove / quit")
 
 
 def add_singer(queue):
@@ -26,9 +36,6 @@ def run_app(queue):
     while is_running:
 
         show_queue(queue)
-        print()
-        print("Options:  add / remove / quit")
-
         command = input("> ")
 
         if command == "quit":
