@@ -18,7 +18,7 @@ def remove_singer(queue):
 
 def run_app(queue):
     print("=" * 44)
-    print("Welcome to Sing Out: A Karaoke Queue Manager")
+    print("🎤 Karaoke Queue")
     print("=" * 44)
 
     is_running = True
