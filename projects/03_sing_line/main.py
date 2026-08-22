@@ -4,14 +4,11 @@ queue = [("Annie", "Dancing Queen"), ("Allen", "Country Roads")]
 def show_queue(queue):
     """Print everyone currently in the queue"""
     print()
-    print("Current Queue:")
+    print("Current queue:")
     print()
-
-    for singer in queue:
+    for i, singer in enumerate(queue):
         name, song = singer
-
-        print(f"{name} - {song}")
-
+        print(f"{i + 1}. {name} - {song}")
     print()
     print("Options:  add / remove / quit")
 
