@@ -2,44 +2,51 @@ queue = [("Annie", "Dancing Queen"), ("Allen", "Country Roads")]
 
 
 def show_queue(queue):
-  """Print everyone currently in the queue"""
-  print()
-  print("Current Queue:")
-  print()
+    """Print everyone currently in the queue"""
+    print()
+    print("Current Queue:")
+    print()
 
-  for singer in queue:
-    name, song = singer
+    for singer in queue:
+        name, song = singer
 
-    print(f"{name} - {song}")
+        print(f"{name} - {song}")
 
-  print()
-  print("Options:  add / remove / quit")
+    print()
+    print("Options:  add / remove / quit")
 
 
 def prompt_for_singer():
 
-  name = input("Name: ").strip().title()
-  song = input("Song: ").strip().title()
+    name = input("Name: ").strip().title()
+    song = input("Song: ").strip().title()
 
-  return name, song
-
+    return name, song
 
 
 def add_singer(queue):
 
-  name, song = prompt_for_singer()
-  print(name, song)
+    name, song = prompt_for_singer()
+    print(name, song)
 
-  queue.append((name, song))
-  print()
-  print(f"Aded {name} to the queue")
-
+    queue.append((name, song))
+    print()
+    print(f"Aded {name} to the queue")
 
 
 def remove_singer(queue):
     """Remove singer fron the queue"""
-    print("[remove a singer]")
+    name = input("Who do you want to remove?").strip().title()
+    print()
 
+    for singer in queue:
+        if singer[0] == name:
+            queue.remove(singer)
+
+            print(f"Removed {name} from the queue")
+            return
+
+    print(f"There's no one named {name} in the queue.")
 
 
 def run_app(queue):
