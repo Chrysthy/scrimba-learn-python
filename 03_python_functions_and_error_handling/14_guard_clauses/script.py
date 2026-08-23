@@ -33,6 +33,10 @@ waitlist = []
 
 def call_next(waitlist):
     """Seat the first guest on the waitlist."""
+    if len(waitlist) == 0:
+        print("There's no one waiting.")
+        return
+
     name = waitlist[0]
     print(f"Now seating: {name}")
 
