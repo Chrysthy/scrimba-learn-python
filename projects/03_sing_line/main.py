@@ -10,7 +10,7 @@ def show_queue(queue):
         name, song = singer
         print(f"{i + 1}. {name} - {song}")
     print()
-    print("Options:  add / next / remove / quit")
+    print("Options:  add / next / top / remove / quit")
 
 
 def prompt_for_singer():
@@ -32,9 +32,21 @@ def add_singer(queue):
 
 
 def next_singer(queue):
-  name, song = queue.pop(0)
-  print()
-  print(f"NOW UP: {name} - {song}")
+    name, song = queue.pop(0)
+    print()
+    print(f"NOW UP: {name} - {song}")
+
+
+def move_to_top(queue):
+    position = int(
+        input("Who do you want to move to the top? Enter a number: "))
+    print()
+
+    singer = queue.pop(position - 1)
+    queue.insert(0, singer)
+
+    name, song = singer
+    print(f"Moved {name} to the top of the queue!")
 
 
 def remove_singer(queue):
@@ -73,6 +85,9 @@ def run_app(queue):
 
         elif command == "next":
             next_singer(queue)
+
+        elif command == "top":
+            move_to_top(queue)
 
         elif command == "remove":
             remove_singer(queue)
