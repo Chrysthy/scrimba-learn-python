@@ -23,7 +23,7 @@ if not logged_in:
 sold_out = ["Tuesday", "Saturday"]
 day = "Wednesday"
 
-if day not in sold_out: 
+if day not in sold_out: # not is the opposite - if not in the list, it will return True
   print("Tickets are available!")
 
 
@@ -35,11 +35,20 @@ if day not in sold_out:
 got_enough_sun = True
 was_watered = True
 
+if got_enough_sun and was_watered:
+   print("It bloomed!")
+
 # 2. You'll wear a ridiculous hat to the party if it's a costume party OR you don't know anyone there.
 #    Print "Hat's going on." if either is true.
 is_costume_party = False
 knows_nobody = True
 
+if is_costume_party or knows_nobody:
+   print("Hat's going on.")
+
 # 3. The cat lays across your keyboard on workdays, so it wins whenever it is NOT the
 #    weekend. Print "Cat wins." when it isn't the weekend.
 is_weekend = False
+
+if not is_weekend:
+   print("Cat wins.")
