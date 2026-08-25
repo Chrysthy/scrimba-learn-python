@@ -38,6 +38,12 @@ A Python command-line application that calculates how a bill should be split bet
 
 A Python command-line word game where players unscramble letters and try to guess the correct word.
 
+<br>
+
+### [Sing Line - Karaoke Queue](./projects/03_sing_line/README.md)
+
+A Python command-line application that manages a karaoke singing queue, allowing users to add singers, call the next performer, reorder the queue, and remove participants.
+
 
 <br>
 
