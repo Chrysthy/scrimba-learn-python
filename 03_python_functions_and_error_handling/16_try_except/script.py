@@ -36,3 +36,13 @@ except ValueError:
 #
 # How many hot dogs can you eat? a lot
 # I need a number to sign you up.
+
+
+
+
+try:
+    count = int(input("How many hot dogs can you eat? "))
+    print(f"Signed up for {count} hot dogs. Good luck!")
+    
+except ValueError:
+    print("I need a number to sign you up.")
