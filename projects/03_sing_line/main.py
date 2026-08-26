@@ -55,9 +55,14 @@ def move_to_top(queue):
         print("You need at least two singers in the queue to move someone to the top.")
         return
 
-    position = int(
-        input("Who do you want to move to the top? Enter a number: "))
-    print()
+    try:
+        position = int(
+            input("Who do you want to move to the top? Enter a number: "))
+
+    except ValueError:
+        print()
+        print("Please enter a number.")
+        return
 
     if position < 1 or position > len(queue):
         print(f"There's no singer at position {position}.")
