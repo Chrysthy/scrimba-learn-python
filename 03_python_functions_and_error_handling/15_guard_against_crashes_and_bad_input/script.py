@@ -8,7 +8,7 @@ def show_queue(queue):
   if len(queue) == 0:
     print("The queue is currently empty.")
 
-  elif:
+  else:
     print()
     print("Current queue:")
     print()
@@ -61,7 +61,7 @@ def move_to_top(queue):
   # 2. Entering an invalid position crashes the app. Make sure
   # the position the user enters isn't out of range: it can't be less than 1 or greater than the length of the list.
  
-  position < 1 or position > len(queue):
+  if position < 1 or position > len(queue):
     print(f"There's no singer at position {position}.")
     return
 
@@ -77,6 +77,7 @@ def remove_singer(queue):
   if len(queue) == 0:
         print("Oops! There's no one left to remove!")
         print("The queue is currently empty.")
+        return
 
   name = input("Who do you want to remove? ").strip().title()
   print()
