@@ -8,7 +8,7 @@ Users can add singers, call the next performer, move someone to the top of the q
 
 ## Demo
 
-![Sing Line Demo](./assets/sing-line-demo.gif)
+![Sing Line Demo](./assets/gif-do-projeto.gif)
 
 <br>
 
