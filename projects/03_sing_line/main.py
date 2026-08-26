@@ -7,7 +7,7 @@ def show_queue(queue):
   if len(queue) == 0:
     print("The queue is currently empty.")
 
-  elif:
+  else:
     print()
     print("Current queue:")
     print()
@@ -37,7 +37,7 @@ def add_singer(queue):
 
     queue.append((name, song))
     print()
-    print(f"Aded {name} to the queue")
+    print(f"Added {name} to the queue")
 
 
 def next_singer(queue):
@@ -59,7 +59,7 @@ def move_to_top(queue):
         input("Who do you want to move to the top? Enter a number: "))
     print()
 
-    position < 1 or position > len(queue):
+    if position < 1 or position > len(queue):
         print(f"There's no singer at position {position}.")
         return
 
@@ -71,10 +71,11 @@ def move_to_top(queue):
 
 
 def remove_singer(queue):
-    """Remove singer fron the queue"""
+    """Remove singer from the queue"""
     if len(queue) == 0:
         print("Oops! There's no one left to remove!")
         print("The queue is currently empty.")
+        return
 
     name = input("Who do you want to remove?").strip().title()
     print()
