@@ -3,9 +3,15 @@ queue = [("Annie", "Dancing Queen"), ("Allen", "Country Roads")]
 
 def show_queue(queue):
     """Print everyone currently in the queue"""
+  print()
+  if len(queue) == 0:
+    print("The queue is currently empty.")
+
+  elif:
     print()
     print("Current queue:")
     print()
+
     for i, singer in enumerate(queue):
         name, song = singer
         print(f"{i + 1}. {name} - {song}")
@@ -24,7 +30,10 @@ def prompt_for_singer():
 def add_singer(queue):
 
     name, song = prompt_for_singer()
-    print(name, song)
+    
+    if name == "" or song == "":
+        print("Oops! I need a name and a song to add someone to the queue.")
+        return
 
     queue.append((name, song))
     print()
@@ -32,15 +41,27 @@ def add_singer(queue):
 
 
 def next_singer(queue):
+     if len(queue) == 0:
+        print("Oops! There's no one left to call up!")
+        return
+
     name, song = queue.pop(0)
     print()
     print(f"NOW UP: {name} - {song}")
 
 
 def move_to_top(queue):
+     if len(queue) <= 1:
+        print("You need at least two singers in the queue to move someone to the top.")
+        return
+
     position = int(
         input("Who do you want to move to the top? Enter a number: "))
     print()
+
+    position < 1 or position > len(queue):
+        print(f"There's no singer at position {position}.")
+        return
 
     singer = queue.pop(position - 1)
     queue.insert(0, singer)
@@ -51,6 +72,10 @@ def move_to_top(queue):
 
 def remove_singer(queue):
     """Remove singer fron the queue"""
+    if len(queue) == 0:
+        print("Oops! There's no one left to remove!")
+        print("The queue is currently empty.")
+
     name = input("Who do you want to remove?").strip().title()
     print()
 
