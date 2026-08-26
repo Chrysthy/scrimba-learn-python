@@ -3,14 +3,14 @@ queue = [("Annie", "Dancing Queen"), ("Allen", "Country Roads")]
 
 def show_queue(queue):
     """Print everyone currently in the queue"""
-  print()
-  if len(queue) == 0:
-    print("The queue is currently empty.")
+    print()
+    if len(queue) == 0:
+        print("The queue is currently empty.")
 
-  else:
-    print()
-    print("Current queue:")
-    print()
+    else:
+        print()
+        print("Current queue:")
+        print()
 
     for i, singer in enumerate(queue):
         name, song = singer
@@ -30,7 +30,7 @@ def prompt_for_singer():
 def add_singer(queue):
 
     name, song = prompt_for_singer()
-    
+
     if name == "" or song == "":
         print("Oops! I need a name and a song to add someone to the queue.")
         return
@@ -41,7 +41,7 @@ def add_singer(queue):
 
 
 def next_singer(queue):
-     if len(queue) == 0:
+    if len(queue) == 0:
         print("Oops! There's no one left to call up!")
         return
 
@@ -51,7 +51,7 @@ def next_singer(queue):
 
 
 def move_to_top(queue):
-     if len(queue) <= 1:
+    if len(queue) <= 1:
         print("You need at least two singers in the queue to move someone to the top.")
         return
 
