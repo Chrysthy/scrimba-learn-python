@@ -47,6 +47,22 @@ A Python command-line application that manages a karaoke singing queue, allowing
 
 <br>
 
+## ✨ Features
+
+- User input handling and validation
+- Conditional logic with `if`, `elif`, and `else`
+- Loops and iteration
+- Functions and reusable code
+- Lists and tuples
+- String manipulation
+- Queue management
+- Adding, removing, and reordering items
+- Basic error handling
+- Command-line interaction
+- Code organization across multiple projects
+
+<br>
+
 ## 📜 License
 
 * This project is licensed under the [MIT License](https://choosealicense.com/licenses/mit/)
