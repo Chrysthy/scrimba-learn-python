@@ -19,9 +19,26 @@
 
 <br>
 
+## 📷 Screenshots
+
+### PayUp Expense Splitter
+
+![PayUp Demo](./assets/gif-do-projeto.gif)
+
+### Guess the Word Game
+
+![ByteShuffle Demo](./assets/gif-do-projeto.gif)
+
+### Sing Line - Karaoke Queue
+
+![Sing Line Demo](./assets/gif-do-projeto.gif)
+
+<br>
+
 ## 🛠 Technologies
 
 * Python
+* Command Line Interface (CLI)
 * Git e GitHub
 
 <br>
