@@ -23,15 +23,19 @@
 
 ### PayUp Expense Splitter
 
-![PayUp Demo](./assets/gif-do-projeto.gif)
+![PayUp Demo](.github/gif-do-projeto.gif)
+
+<br>
 
 ### Guess the Word Game
 
-![ByteShuffle Demo](./assets/gif-do-projeto.gif)
+![ByteShuffle Demo](.github/gif-do-projeto%20copy.gif)
+
+<br>
 
 ### Sing Line - Karaoke Queue
 
-![Sing Line Demo](./assets/gif-do-projeto.gif)
+![Sing Line Demo](.github/gif-do-projeto%20copy%202.gif)
 
 <br>
 
